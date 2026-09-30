@@ -1,0 +1,372 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #e9e9e9;
+    color: #111;
+    font-family: "Times New Roman", serif;
+}
+
+
+/* ================= A4 ================= */
+
+.page {
+    width: 210mm;
+    height: 297mm;
+    min-height: 297mm;
+    max-height: 297mm;
+
+    margin: 15px auto;
+
+    padding: 18mm 18mm 16mm 20mm;
+
+    background: white;
+
+    box-shadow: 0 0 8px rgba(0,0,0,0.2);
+
+    overflow: hidden;
+
+    page-break-after: always;
+}
+
+
+/* ================= ТИТУЛ ================= */
+
+.title-page {
+    position: relative;
+
+    text-align: center;
+
+    padding-top: 10mm;
+    padding-left: 14mm;
+    padding-right: 14mm;
+}
+
+.logo {
+    width: 45mm;
+    height: 45mm;
+
+    object-fit: contain;
+
+    display: block;
+
+    margin: 0 auto 3mm;
+}
+
+.institute {
+    font-size: 17pt;
+    font-weight: bold;
+    line-height: 1.3;
+}
+
+.title-page h1 {
+    font-size: 45pt;
+
+    margin: 8mm 0 7mm;
+
+    line-height: 1;
+}
+
+.discipline {
+    font-size: 18pt;
+    line-height: 1.4;
+}
+
+.topic {
+    font-size: 20pt;
+    line-height: 1.35;
+
+    margin-top: 5mm;
+}
+
+.student {
+    width: 130mm;
+
+    margin-left: auto;
+    margin-top: 12mm;
+
+    text-align: left;
+
+    font-size: 18pt;
+
+    line-height: 1.3;
+}
+
+.student p {
+    margin: 4mm 0;
+}
+
+.city {
+    position: absolute;
+
+    bottom: 12mm;
+
+    left: 0;
+    right: 0;
+
+    font-size: 19pt;
+    font-weight: bold;
+}
+
+
+/* ================= ЗАГОЛОВКИ ================= */
+
+h2 {
+    text-align: center;
+
+    font-size: 22pt;
+
+    line-height: 1.2;
+
+    margin: 0 0 9mm;
+}
+
+h3 {
+    font-size: 18pt;
+}
+
+
+/* ================= ТЕКСТ ================= */
+
+.page > p {
+    font-size: 16pt;
+
+    line-height: 1.38;
+
+    text-align: justify;
+
+    text-indent: 12mm;
+
+    margin: 0 0 5mm;
+}
+
+
+/* ================= СОДЕРЖАНИЕ ================= */
+
+.contents {
+    margin-top: 12mm;
+}
+
+.contents p {
+    font-size: 18pt;
+
+    line-height: 1.25;
+
+    margin: 0 0 7mm;
+
+    text-indent: 0;
+}
+
+
+/* ================= ФОТО ================= */
+
+.photo {
+    text-align: center;
+
+    margin: 2mm auto 5mm;
+}
+
+.photo img {
+    width: 65mm;
+    height: 72mm;
+
+    object-fit: contain;
+
+    border: 1px solid #777;
+}
+
+.photo div {
+    font-size: 13pt;
+
+    font-style: italic;
+
+    margin-top: 2mm;
+}
+
+.photo.machine img {
+    width: 105mm;
+    height: 78mm;
+
+    object-fit: contain;
+}
+
+
+/* ================= ИНФОРМАЦИОННЫЙ БЛОК ================= */
+
+.info-box {
+    border: 2px solid #333;
+
+    padding: 4mm 6mm;
+
+    margin: 6mm 0;
+}
+
+.info-box h3 {
+    text-align: center;
+
+    margin: 0 0 3mm;
+}
+
+.info-box p {
+    font-size: 15pt;
+
+    line-height: 1.35;
+
+    text-align: justify;
+
+    text-indent: 0;
+
+    margin: 0;
+}
+
+
+/* ================= СХЕМА ================= */
+
+.scheme {
+    width: 125mm;
+
+    margin: 7mm auto;
+
+    text-align: center;
+}
+
+.scheme-title {
+    font-size: 18pt;
+
+    font-weight: bold;
+
+    margin-bottom: 4mm;
+}
+
+.scheme-item {
+    border: 1.5px solid #222;
+
+    padding: 3mm;
+
+    font-size: 16pt;
+
+    background: #f5f5f5;
+}
+
+.arrow {
+    font-size: 23pt;
+
+    line-height: 1;
+
+    padding: 1mm;
+}
+
+
+/* ================= ЦИТАТА ================= */
+
+.quote {
+    border-left: 5px solid #222;
+
+    background: #f5f5f5;
+
+    padding: 5mm 7mm;
+
+    margin: 7mm 5mm;
+
+    font-size: 16pt;
+
+    line-height: 1.4;
+
+    font-style: italic;
+
+    text-align: center;
+}
+
+
+/* ================= ЛИТЕРАТУРА ================= */
+
+.literature {
+    padding-left: 12mm;
+
+    margin-top: 10mm;
+}
+
+.literature li {
+    font-size: 16pt;
+
+    line-height: 1.4;
+
+    text-align: justify;
+
+    margin-bottom: 7mm;
+}
+
+.sources-title {
+    margin-top: 13mm;
+
+    border-top: 1px solid #333;
+
+    padding-top: 6mm;
+}
+
+.source {
+    font-size: 15pt !important;
+
+    text-indent: 0 !important;
+
+    margin-bottom: 5mm !important;
+}
+
+.end {
+    margin-top: 15mm;
+
+    text-align: center;
+
+    font-size: 17pt;
+
+    font-weight: bold;
+}
+
+
+/* ================= ПЕЧАТЬ ================= */
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+
+    html,
+    body {
+        width: 210mm;
+        margin: 0;
+        padding: 0;
+
+        background: white;
+    }
+
+    .page {
+        width: 210mm;
+        height: 297mm;
+
+        min-height: 297mm;
+        max-height: 297mm;
+
+        margin: 0;
+
+        box-shadow: none;
+
+        overflow: hidden;
+
+        page-break-after: always;
+        break-after: page;
+    }
+
+    .page:last-child {
+        page-break-after: auto;
+        break-after: auto;
+    }
+}
